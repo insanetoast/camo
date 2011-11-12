@@ -1,0 +1,79 @@
+/*
+Background green: #ECEFEA
+Menu bar green:#747F6F
+Logo red: #D47667
+Logo blue: #5E7D87
+*/
+
+body { background-color: rgb(81,103,71); padding: 1em; }
+
+.container {
+  background-color: white;
+  padding: 1em 2em;
+  margin: auto;
+  min-width: 600px;
+  width: 90%;
+  max-width: 1024px;
+  border: 1px solid black;
+}
+
+#hd {
+  font-size: 150%;
+  font-weight: bold;
+}
+
+#bd {
+  text-align: right;
+  background: url(/images/soldier.png) no-repeat;
+}
+
+#content {
+  text-align: left;
+}
+
+.sign_up { text-align: right; margin-top: 0.75em; }
+
+.button {
+  border: 3px solid rgb(131,152,81);
+  font-weight: bold;
+  text-decoration: none;
+  color: rgb(81,103,71);
+  background-color: rgb(170,197,107);
+  padding: 0.5em 1em;
+}
+
+.navigation {
+  border: 3px solid rgb(131,152,81);
+  padding: 0;
+  margin: 0;
+  background-color: rgb(170,197,107);
+  list-style: none;
+  text-align: center;
+  margin-bottom: 2em;
+}
+
+.navigation li {
+  display: inline;
+}
+
+.navigation a {
+  font-size: 150%;
+  font-weight: bold;
+  text-decoration: none;
+  color: rgb(81,103,71);
+  padding: 1em;
+}
+
+a, a:visited {
+  color: rgb(81,103,71);
+}
+
+a:hover {
+  color: black;
+}
+
+#ft {
+  margin-top: 2em;
+  text-align: right;
+  color: rgb(131,152,81);
+}
