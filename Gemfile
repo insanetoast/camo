@@ -4,6 +4,6 @@ gem 'rack'
 gem 'rack-rewrite'
 gem 'rack-contrib'
 
-group :deployment do
+group :development do
   gem 'heroku'
 end
