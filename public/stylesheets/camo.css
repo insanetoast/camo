@@ -28,11 +28,12 @@ body {
 
 #bd {
   text-align: right;
-  background: url(/images/soldier.png) no-repeat;
+  background: url(/images/soldier.jpg) no-repeat;
 }
 
 #content {
   text-align: left;
+  min-height: 529px;
 }
 
 .sign_up { text-align: right; margin-top: 0.75em; }
