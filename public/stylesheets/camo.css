@@ -85,3 +85,26 @@ a.current, a.current:hover a.current:visited, a.current:active {
   text-align: right;
   color: rgb(131,152,81);
 }
+
+#content img {
+  float: right;
+  margin: 1em;
+  padding: 1em;
+  border: 1px solid rgb(81,103,71);
+}
+
+form label {
+  display: block;
+  float: left;
+  clear: left;
+  width: 13em;
+}
+
+form input[type="text"], form textarea {
+  margin-bottom: 1em;
+  width: 25em;
+}
+
+form fieldset {
+  clear: left;
+}
