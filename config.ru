@@ -7,7 +7,7 @@ use Rack::Rewrite do
   rewrite '/', '/index.html'
   rewrite %r{(.*)}, '$1.html', :if => lambda { |rack_env|
     html_file = File.join '.', 'public', rack_env['SCRIPT_NAME']
-    full_path = File.absolute html_file
+    full_path = File.absolute_path html_file
     File.exists? full_path
   }
 end
