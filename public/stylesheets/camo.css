@@ -65,7 +65,7 @@ body {
   font-weight: bold;
   text-decoration: none;
   color: rgb(81,103,71);
-  padding: 1em;
+  padding: 0.5em;
 }
 
 a, a:visited {
@@ -73,6 +73,10 @@ a, a:visited {
 }
 
 a:hover {
+  color: brown;
+}
+
+a.current, a.current:hover a.current:visited, a.current:active {
   color: black;
 }
 
