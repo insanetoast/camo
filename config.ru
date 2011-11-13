@@ -48,7 +48,7 @@ module Rack
         pairs = body.split /\&/
         pairs.sort.map do |pair|
           key, value = pair.split /\=/, 2
-          "%-40s | %s" % [ CGI.unescape(key), CGI.unescape(value).gsub(/\n/, "\n" + (' ' * 40) + '| ') ]
+          "%-40s | %s" % [ CGI.unescape(key), CGI.unescape(value).gsub(/\n/, "\n" + (' ' * 40) + ' | ') ]
         end.join("\n")
       end
     end
