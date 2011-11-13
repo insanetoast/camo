@@ -66,7 +66,7 @@ end
 
 use Rack::Static, :urls => %w(/images /stylesheets /javascripts /robots.txt /favicon.ico), :root => "public"
 use Rack::ETag
-use Rack::FormMail, :path => '/send_details', :method => :post, :to => "info@mydaddyisasoldieradventures.org"
+use Rack::FormMail, :path => '/send_details', :method => :post, :to => ENV['EMAIL_DESTINATION']
 use Rack::Rewrite do
   rewrite '/', '/index.html'
   rewrite %r{(.*)}, '$1.html', :if => lambda { |rack_env|
