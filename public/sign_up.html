@@ -25,15 +25,16 @@
       </div>
       <div id="bd" class="yui3-g">
         <div class="content yui3-u-2-3" id="content">
-          <p>Please complete this form for tickets to our events. We will email your tickets to you within 48 hours.</p>
+          <p>Please complete this form for tickets to our events. Once we have verified your information, we will email a link to your tickets within 48 hours. Space is always limited, and we will inform you as quickly as we can should the events be full.</p>
 
           <form action="/send_details" method="POST">
             <div class="select_field">
               <label for="event">Event</label>
               <select id="event" name="event">
                 <option>Please select the event you wish to attend</option>
-                <option value="">Christmas Party at Victory Services Club</option>
-                <option value="">Chelsea Football Club Party</option>
+                <option value="xmas-party">Christmas Party at Victory Services Club</option>
+                <option value="fc-party">Chelsea Football Club Party and I can confirm the following children had a parent deployed over Xmas 2011</option>
+                 <option value="both">Both, and I can confirm the following children had a parent deployed over Xmas 2011</option>
               </select>
             </div>
 
@@ -138,6 +139,15 @@
                 <input id="child_6_birthdate" name="child_6_birthdate" type="text" />
               </div>
             </fieldset>
+            
+            <div class="select_field">
+              <label for="info">Information</label>
+              <select id="info" name="retain_info">
+                <option>May we retain this information to inform you of future events?</option>
+                <option value="no">No, please don't - I understand I will have to complete this form again for future events</option>
+                <option value="yes">Yes, please keep me informed</option>
+              </select>
+            </div>
 
             <div class="controls">
               <input type="submit" value="Send these details to us" />
@@ -148,7 +158,7 @@
       </div>
       <div id="ft">
         <p class="credits">An <a href="http://insanetoast.com/">Insane Toast</a> production.</a></p>
-        <p class="copyright">Copyright &copy; 2011 My Daddy Is a Soldier Adventures.</p>
+        <p class="copyright">Charitable Status Pending. My Daddy is a Soldier Adventures is a company registered in England and Wales. Registration number 07694082.<br /> Registered address 4B The High Street, Egham, TW20 9HE. Copyright &copy; 2011 My Daddy Is a Soldier Adventures.</p>
       </div>
     </div>
   </body>
